@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Background } from "./component/Background/Background.jsx"; //
 import { Navbar } from "./component/Navbar/Navbar.jsx"; //
+import { Hero } from "./component/Hero/Hero.jsx";
+
 export const App = () => {
   let heroData = [
     { text1: " Dive into ", text2: "what you love" },
@@ -16,7 +18,7 @@ export const App = () => {
       <Navbar />
       <Hero
         setPlaystatus={setPlaystatus}
-        heroData={heroData}
+        heroData={heroData[herocount]}
         heroCount={herocount}
         setHerocount={setHerocount}
         playStatus={playstatus}
