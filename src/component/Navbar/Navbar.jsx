@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 export const Navbar = () => {
   return (
-    <div className="Nav">
+    <div className="nav">
       <div className="nav-logo">EV-olution</div>
       <ul className="nav-menu">
         <li>Home</li>
